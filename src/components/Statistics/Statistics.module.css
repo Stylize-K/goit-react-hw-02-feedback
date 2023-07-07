@@ -1,0 +1,8 @@
+.statWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat {
+  font-size: 18px;
+}
