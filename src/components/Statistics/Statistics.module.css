@@ -1,8 +1,40 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .statWrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 15px;
+}
+
+.posiWrapper {
+  margin-top: 25px;
 }
 
 .stat {
   font-size: 18px;
+}
+
+.value {
+  font-weight: 600;
+}
+
+.scale {
+  margin-top: 15px;
+  border-radius: 10px;
+  width: 50%;
+  height: 22px;
+  border: 2px solid black;
+  overflow: hidden;
+}
+.scale::-webkit-progress-bar {
+  background-color: #f0f0f0;
+  border-radius: 6px;
+}
+.scale::-webkit-progress-value {
+  background-color: rgb(187, 75, 0);
+  background-image: linear-gradient(rgb(153, 62, 1), rgb(236, 202, 179));
+  border-radius: 6px;
 }
