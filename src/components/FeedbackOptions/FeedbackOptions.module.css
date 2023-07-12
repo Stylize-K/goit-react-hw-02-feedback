@@ -22,3 +22,10 @@
   scale: 1.05;
   transform: matrix(45);
 }
+
+.button_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

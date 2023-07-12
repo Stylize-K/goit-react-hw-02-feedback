@@ -8,3 +8,11 @@
   padding: 30px;
   border-radius: 15px;
 }
+
+.icon_good {
+  padding-bottom: 5px;
+}
+
+.icon_bad {
+  padding-bottom: 3px;
+}
