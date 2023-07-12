@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import css from './FeedbackOptions.module.css';
 
-export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
+export const FeedbackOptions = ({ options, onLeaveFeedback, iconsButton }) => {
   return (
     <div className={css.feedbackWrapper}>
       {options.map(option => {
@@ -13,7 +13,10 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
             type="button"
             onClick={() => onLeaveFeedback(option)}
           >
-            {option}
+            <div className={css.button_wrapper}>
+              {iconsButton[option]}
+              {option}
+            </div>
           </button>
         );
       })}

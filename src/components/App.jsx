@@ -5,6 +5,9 @@ import { Statistics } from './Statistics/Statistics';
 import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
 import { Section } from './Section/Section';
 import { Notification } from './Notification/Notification';
+import { FcLike } from 'react-icons/fc';
+import { FcInfo } from 'react-icons/fc';
+import { FcDislike } from 'react-icons/fc';
 
 import css from './App.module.css';
 
@@ -13,6 +16,12 @@ export class App extends Component {
     good: 0,
     neutral: 0,
     bad: 0,
+  };
+
+  iconsButton = {
+    good: <FcLike size="30px" className={css.icon_good} />,
+    neutral: <FcInfo size="30px" />,
+    bad: <FcDislike size="30px" className={css.icon_bad} />,
   };
 
   onBtnClicked = option =>
@@ -41,6 +50,7 @@ export class App extends Component {
           <FeedbackOptions
             options={options}
             onLeaveFeedback={this.onBtnClicked}
+            iconsButton={this.iconsButton}
           />
         </Section>
         <Section title="Statistics">
